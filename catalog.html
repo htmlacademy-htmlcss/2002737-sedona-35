@@ -8,18 +8,22 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="logo-item">
-            <p class="visually-hidden">Город Седона</p>
-            <img class="logo" src="" alt="Логотип города Седона">
+        <ul class="navigation-logo">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link" class="visually-hidden" href="index.html">Главная</a>
+            <img class="logo" src="#" alt="Логотип города Седона">
+          </li>
+        </ul>
+
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="main.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" navigation-link-current href="hotels.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -32,11 +36,11 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span>23</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Выбор гостиницы (наверное)</a>
-              <button class="button button1" type="submit">Хочу сюда!</button>
+            <a class="button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -47,7 +51,9 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" class="visually-hidden" href="main.html">Главная</a>
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы Седоны</a>
@@ -105,8 +111,13 @@
           </ul>
         </fieldset>
           <button class="button" type="submit">Применить</button>
-          <button class="button" type="submit">Сбросить</button>
+          <button class="button" type="reset">Сбросить</button>
         </form>
+
+        <p>Найдено гостиниц
+          <span>38</span>
+        </p>
+
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
