@@ -293,8 +293,11 @@ body {
   color: #000000;
 }
 
-.catalog-footer {
-color: #000000;
+.newsletter-footer{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
 }
 
 .field-catalog-footer {
