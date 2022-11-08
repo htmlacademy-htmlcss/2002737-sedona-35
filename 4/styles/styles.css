@@ -1,12 +1,8 @@
 @font-face {
-
   font-family: "PT Sans";
-
   font-style: normal;
   font-weight: 400;
-
   src: url("../fonts/ptsans-400.woff2")  format("woff2");
-
   font-display: swap;
 }
 
@@ -25,6 +21,7 @@ body {
   color: #000000;
   background-color: #FFFFFF;
   text-align: center;
+  margin: 0;
 }
 
 .button {
@@ -45,7 +42,6 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -55,7 +51,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.main-index {
+.welcome{
   color: #000000;
   background-color: #FFFFFF;
   background-image: url("../images/welcome/welcome-background.jpg");
@@ -64,33 +60,41 @@ body {
 }
 
 .introduction-text {
-font-family: "PT Sans", sans-serif;
-font-size: 30px;
-line-height: 36px;
-font-weight: 700;
-text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.font-gray {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
 }
 
 .advantages-list {
   text-align: center;
 }
 
+.advantages-font-dark p{
+  color: #333333;
+}
+
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
 .search-title {
-font-family: "PT Sans", sans-serif;
-font-size: 30px;
-line-height: 28px;
-text-transform: uppercase;
-text-align: center;
+  font-size: 30px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.page-footer {
+.newsletter{
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -134,14 +138,10 @@ text-align: center;
   color: #000000;
 }
 
-
-
-
-
 .hotels-selection-menu {
   color: #FFFFFF;
-  background-image: url("../images/catalog-background.jpg");
   background-color: #82B3D3;
+  background-image: url("../images/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -208,12 +208,12 @@ text-align: center;
 }
 
 .accomodation-type {
-  color: #000000;
+  color: #333333;
   text-align: left;
 }
 
 .product-card-price {
-  color: #000000;
+  color: #333333;
   text-align: right;
 }
 
@@ -264,7 +264,7 @@ text-align: center;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #000000;
+  color: #333333;
   text-transform: uppercase;
 }
 
@@ -293,8 +293,11 @@ text-align: center;
   color: #000000;
 }
 
-.catalog-footer {
-color: #000000;
+.newsletter-footer{
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
 }
 
 .field-catalog-footer {
