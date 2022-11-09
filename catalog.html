@@ -7,10 +7,10 @@
   </head>
 
   <body>
+    <div class="site-container">
     <header class="page-header">
-      <nav class="navigation">
         <nav class="navigation">
-          <a class="navigation-link" class="visually-hidden" href="index.html">
+          <a class="navigation-logo" class="visually-hidden" href="index.html">
             <img class="logo" src="images/header/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона">
           </a>
 
@@ -65,7 +65,9 @@
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group">
+
+         <div class="catalog-filter-menu">
+          <fieldset class="catalog-filter-group-infrastructure">
             <legend class="catalog-filter-title">Инфраструктура</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -83,9 +85,10 @@
                   <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
                 </label>
               </li>
+            </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group-accomodation-type">
           <legend class="catalog-filter-title">Тип жилья</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -107,13 +110,15 @@
         </fieldset>
           <button class="button-use-filters" type="submit">Применить</button>
           <button class="button-reset-filters" type="reset">Сбросить</button>
-        </form>
-      </div>
+        </div>
+      </form>
+     </section>
+    </div>
 
-
-        <p>Найдено гостиниц
-          <span>38</span>
-        </p>
+    <section class="hotel-filter-sort">
+      <h2>Найдено гостиниц
+        <span>38</span>
+      </h2>
 
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
@@ -132,7 +137,9 @@
         <a class="button-show-list" href="#" >
           <span class="visually-hidden">Показать список</span>
         </a>
+    </section>
 
+    <section class="catalog-results">
         <ul class="product-list">
           <li class="product-card">
           <a class="product-card-link" href="#">
@@ -182,7 +189,8 @@
           <p class="visually-hidden" class="number-of-stars" >2 звезды</p>
           <p class="rating">Рейтинг: 5,0</p>
         </li>
-        </ul>
+      </ul>
+     </section>
 
         <ul class="pagination">
           <li class="pagination-item">
@@ -200,11 +208,11 @@
           <li class="pagination-item">
             <b class="other-pages">...</b>
           </li>
-        </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
-      </section>
+       </ul>
+
     </main>
 
     <footer class="catalog-footer">
@@ -216,6 +224,8 @@
           <button class="button-newsletter-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
+
+    <div class="page-footer-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
@@ -245,10 +255,11 @@
       <section class="footer-design">
         <h2 class="visually-hidden">Логотип HTML Academy</h2>
         <a class="htmlacademy-link" class="visually-hidden" href="https://htmlacademy.ru/">
-        <img class="footer-logo-html" src="images/footer/logo-html-academy.svg" width="114,9" height="32.9" alt="Логотип HTML Academy">
+        <img class="footer-logo-html" src="images/footer/logo-html-academy.svg" width="115" height="33" alt="Логотип HTML Academy">
       </a>
       </section>
-  </footer>
-
+     </div>
+    </footer>
+   </div>
   </body>
 </html>
