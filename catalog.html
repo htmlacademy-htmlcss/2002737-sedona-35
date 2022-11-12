@@ -108,35 +108,44 @@
             </li>
           </ul>
         </fieldset>
+
+         <div class="catalog-price-filter">
+          <h4 class="catalog-filter-title">Стоимость, ₽:</h4>
+         </div>
+
+         <div class="buttons-filters">
           <button class="button-use-filters" type="submit">Применить</button>
           <button class="button-reset-filters" type="reset">Сбросить</button>
+         </div>
         </div>
       </form>
      </section>
     </div>
 
     <section class="hotel-filter-sort">
-      <h2>Найдено гостиниц
+      <h2>НАЙДЕНО ГОСТИНИЦ:
         <span>38</span>
       </h2>
 
+       <div class="sorting-container">
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
 
-        <a class="button-show-cards" href="#">
+        <a class="button show-cards" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
 
-        <a class="button-slideshow" href="#">
+        <a class="button show-slideshow" href="#">
           <span class="visually-hidden">Слайдшоу</span>
         </a>
 
-        <a class="button-show-list" href="#" >
+        <a class="button show-list" href="#" >
           <span class="visually-hidden">Показать список</span>
         </a>
+      </div>
     </section>
 
     <section class="catalog-results">
@@ -192,6 +201,7 @@
       </ul>
      </section>
 
+      <div class="pagination-container">
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -212,20 +222,23 @@
           <a class="pagination-link" href="#">10</a>
         </li>
        </ul>
-
+      </div>
     </main>
 
     <footer class="catalog-footer">
-      <section class="newsletter-footer">
+      <section class="newsletter-catalog">
+        <div class="newsletter-group-catalog">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="font-gray">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="font-gray">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field-catalog-footer"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <input class="newsletter-field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button-newsletter-subscribe" type="submit">Подписаться</button>
         </form>
+       </div>
       </section>
 
-    <div class="page-footer-container">
+
+     <div class="page-footer-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
